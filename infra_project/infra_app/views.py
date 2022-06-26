@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'У меня получилось!')
+    return HttpResponse('У меня получилось!')
 
 
 def second_page(request):
-    return render(request, 'А это вторая страница')
+    return HttpResponse('А это вторая страница')
